@@ -1,16 +1,17 @@
-correct_answer = "tokyo"
-min_attempt = 0
-max_attempt = 5
+correct_answer = "Tokyo"
+attempts = 0
+max_attempts = 5
 
-while min_attempt < max_attempt:  
+while True:
     answer = input("What is the capital of Japan?\n ")
-    
+    attempts += 1  
+
     if answer == correct_answer:  
         print("Correct! Well done.")
         break  
-    else:
-        min_attempt += 1  
-        print(f"Incorrect answer. Number of attempts {min_attempt}/{max_attempt}")
 
-if min_attempt == max_attempt:
-    print("Sorry, The correct answer is Tokyo.")
+    if attempts == max_attempts:  
+        print("Sorry, the correct answer is Tokyo.")  
+        break  
+
+    print(f"Incorrect. Attempts: {attempts}/{max_attempts}")
