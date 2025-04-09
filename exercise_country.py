@@ -14,7 +14,7 @@ for country in countries:
         biggest_country = country
 
 
-print(f"The biggest country is {biggest_country["name"]} with a population of {biggest_country["population"]:}")
+print(f"The biggest country is {biggest_country["name"]} with a population of {biggest_country["population"]:,}")
 
         
 
